@@ -35,6 +35,9 @@ public class Panel extends JPanel implements ActionListener {
 		for (int i = 0 ; i< this.cote_droit.getButton().size() ; i++) {
 			this.cote_droit.getButton().get(i).getBoutton().addActionListener(this);
 		}
+		for (int i = 0 ; i< this.cote_gauche.getButton().size() ; i++) {
+			this.cote_gauche.getButton().get(i).getBoutton().addActionListener(this);
+		}
 	}
 
 	@Override
@@ -43,13 +46,20 @@ public class Panel extends JPanel implements ActionListener {
 			this.regle.ChangementDeTour();
 			this.nord.setText("      C'est le tour de : " + this.regle.toString()  );
 		}
-
 		for (int i = 0 ; i< this.cote_droit.getButton().size() ; i++) {
 			if (e.getSource().equals(this.cote_droit.getButton().get(i).getBoutton()))
 				this.cote_droit.getButton().get(i).getBoutton().setText("toucher");
 			}
+
+		for (int i = 0 ; i< this.cote_droit.getButton().size() ; i++) {
+			if (e.getSource().equals(this.cote_gauche.getButton().get(i).getBoutton())) {
+				this.cote_gauche.getButton().get(i).getBoutton().setText("bateau");
+				regle.AttribuerMorceau(this.cote_gauche.getButton().get(i).getX(), this.cote_gauche.getButton().get(i).getX());
+				this.cote_gauche.getButton().get(i).getBoutton().setText("bateau");
+			}
 		}
-				
+	}
+			
 		
 }
 

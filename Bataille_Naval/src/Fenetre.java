@@ -13,7 +13,7 @@ public class Fenetre extends JFrame{
 
 	public Fenetre() {
 		
-		this.setIconImage(new ImageIcon("../Bataille_Naval/bataille.png").getImage()); // Fonctionnais chez mes parents mais visiblement pas avec mon pc
+		this.setIconImage(new ImageIcon("../Bataille_Naval/bataille.png").getImage()); 
 		this.setSize(1200,800);
 		this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		this.setTitle("Bataille Naval");
