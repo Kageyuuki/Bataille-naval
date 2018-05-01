@@ -4,7 +4,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class PanelSud extends JPanel{
+public class PanelSud extends JPanel /*implements */{
 	/**
 	 * 
 	 */
@@ -17,8 +17,8 @@ public class PanelSud extends JPanel{
 	public PanelSud() {
 		fin_de_tour = new JButton("Fin de tour");
 		abandonner = new JButton("Abandonner");
-		vide1 = new JLabel("");
-		vide2 = new JLabel("");
+		vide1 = new JLabel(" ");
+		vide2 = new JLabel(" ");
 		this.setLayout(new GridLayout(1,4));
 		this.add(vide1);
 		this.add(abandonner);

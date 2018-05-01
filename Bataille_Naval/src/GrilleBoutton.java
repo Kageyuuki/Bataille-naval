@@ -1,14 +1,11 @@
 
 import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 //instruction a faire dans l ordre ligne 41 puis 188 et enfin 235
-public class GrilleBoutton extends JPanel implements ActionListener{
+public class GrilleBoutton extends JPanel {
 	/**
 	 * 
 	 */
@@ -168,7 +165,7 @@ public class GrilleBoutton extends JPanel implements ActionListener{
 //////////////////////////// Constructeur //////////////////////////////
 	
 	public GrilleBoutton() {
-		
+		listeBoutton = new ArrayList<CaseBoutton>();
 		//Instantiation de la premiere horizontale
 		this.h_a = new JLabel("a");
 		this.h_b = new JLabel("b");
@@ -306,63 +303,113 @@ public class GrilleBoutton extends JPanel implements ActionListener{
 		
 		//Instantiation Boutton colonne f
 		this.f_1 = new CaseBoutton(6, 1);
+		this.listeBoutton.add(f_1);
 		this.f_2 = new CaseBoutton(6, 2);
+		this.listeBoutton.add(f_2);
 		this.f_3 = new CaseBoutton(6, 3);
+		this.listeBoutton.add(f_3);
 		this.f_4 = new CaseBoutton(6, 4);
+		this.listeBoutton.add(f_4);
 		this.f_5 = new CaseBoutton(6, 5);
+		this.listeBoutton.add(f_5);
 		this.f_6 = new CaseBoutton(6, 6);
+		this.listeBoutton.add(f_6);
 		this.f_7 = new CaseBoutton(6, 7);
-		this.f_8 = new CaseBoutton(6, 8);		
+		this.listeBoutton.add(f_7);
+		this.f_8 = new CaseBoutton(6, 8);
+		this.listeBoutton.add(f_8);
 		this.f_9 = new CaseBoutton(6, 9);
+		this.listeBoutton.add(f_9);
 		this.f_10 = new CaseBoutton(6, 10);
+		this.listeBoutton.add(f_10);
 		
 		//Instantiation Boutton colonne g
 		this.g_1 = new CaseBoutton(7, 1);
+		this.listeBoutton.add(g_1);
 		this.g_2 = new CaseBoutton(7, 2);
+		this.listeBoutton.add(g_2);
 		this.g_3 = new CaseBoutton(7, 3);
+		this.listeBoutton.add(g_3);
 		this.g_4 = new CaseBoutton(7, 4);
+		this.listeBoutton.add(g_4);
 		this.g_5 = new CaseBoutton(7, 5);
+		this.listeBoutton.add(g_5);
 		this.g_6 = new CaseBoutton(7, 6);
+		this.listeBoutton.add(g_6);
 		this.g_7 = new CaseBoutton(7, 7);
+		this.listeBoutton.add(g_7);
 		this.g_8 = new CaseBoutton(7, 8);
+		this.listeBoutton.add(g_8);
 		this.g_9 = new CaseBoutton(7, 9);
+		this.listeBoutton.add(g_9);
 		this.g_10 = new CaseBoutton(7, 10);
+		this.listeBoutton.add(g_10);
 		
 		//Instantiation Boutton colonne h
 		this.h_1 = new CaseBoutton(8, 1);
+		this.listeBoutton.add(h_1);
 		this.h_2 = new CaseBoutton(8, 2);
+		this.listeBoutton.add(h_2);
 		this.h_3 = new CaseBoutton(8, 3);
+		this.listeBoutton.add(h_3);
 		this.h_4 = new CaseBoutton(8, 4);
-		this.h_5 = new CaseBoutton(8, 5);		
+		this.listeBoutton.add(h_4);
+		this.h_5 = new CaseBoutton(8, 5);	
+		this.listeBoutton.add(h_5);
 		this.h_6 = new CaseBoutton(8, 6);
+		this.listeBoutton.add(h_6);
 		this.h_7 = new CaseBoutton(8, 7);
+		this.listeBoutton.add(h_7);
 		this.h_8 = new CaseBoutton(8, 8);
+		this.listeBoutton.add(h_8);
 		this.h_9 = new CaseBoutton(8, 9);
+		this.listeBoutton.add(h_9);
 		this.h_10 = new CaseBoutton(8, 10);
+		this.listeBoutton.add(h_10);
 		
 		//Instantiation Boutton colonne i
 		this.i_1 = new CaseBoutton(9, 1);
+		this.listeBoutton.add(i_1);
 		this.i_2 = new CaseBoutton(9, 2);
+		this.listeBoutton.add(i_2);
 		this.i_3 = new CaseBoutton(9, 3);
+		this.listeBoutton.add(i_3);
 		this.i_4 = new CaseBoutton(9, 4);
+		this.listeBoutton.add(i_4);
 		this.i_5 = new CaseBoutton(9, 5);
+		this.listeBoutton.add(i_5);
 		this.i_6 = new CaseBoutton(9, 6);
+		this.listeBoutton.add(i_6);
 		this.i_7 = new CaseBoutton(9, 7);
+		this.listeBoutton.add(i_7);
 		this.i_8 = new CaseBoutton(9, 8);
+		this.listeBoutton.add(i_8);
 		this.i_9 = new CaseBoutton(9, 9);
+		this.listeBoutton.add(i_9);
 		this.i_10 = new CaseBoutton(9, 10);
+		this.listeBoutton.add(i_10);
 		
 		//Instantiation Boutton colonne j
 		this.j_1 = new CaseBoutton(10, 1);
+		this.listeBoutton.add(j_1);
 		this.j_2 = new CaseBoutton(10, 2);
+		this.listeBoutton.add(j_2);
 		this.j_3 = new CaseBoutton(10, 3);
+		this.listeBoutton.add(j_3);
 		this.j_4 = new CaseBoutton(10, 4);
+		this.listeBoutton.add(j_4);
 		this.j_5 = new CaseBoutton(10, 5);
+		this.listeBoutton.add(j_5);
 		this.j_6 = new CaseBoutton(10, 6);
+		this.listeBoutton.add(j_6);
 		this.j_7 = new CaseBoutton(10, 7);
+		this.listeBoutton.add(j_7);
 		this.j_8 = new CaseBoutton(10, 8);
+		this.listeBoutton.add(j_8);
 		this.j_9 = new CaseBoutton(10, 9);
+		this.listeBoutton.add(j_9);
 		this.j_10 = new CaseBoutton(10, 10);
+		this.listeBoutton.add(j_10);
 		
 		
 		//Declaration du layout
@@ -510,13 +557,18 @@ public class GrilleBoutton extends JPanel implements ActionListener{
 		this.add(h_10.getBoutton());
 		this.add(i_10.getBoutton());
 		this.add(j_10.getBoutton());
+		
 
 	}
+	
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		
-		
-		
-	}	
+
+	public ArrayList<CaseBoutton> getListeBoutton() {
+		return listeBoutton;
+	}
+
+	public void setListeBoutton(ArrayList<CaseBoutton> listeBoutton) {
+		this.listeBoutton = listeBoutton;
+	}
+	
 }
