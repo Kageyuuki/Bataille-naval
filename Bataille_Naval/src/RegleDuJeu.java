@@ -36,7 +36,17 @@ public class RegleDuJeu {
 			this.joueur2.finDeTour();
 		}
 	}
-	
-	
-			
+	public void AttribuerMorceau(int x , int y ) {
+		int i = 0;
+		if(this.joueur1.isSontTour()) {
+		while (this.joueur1.getSesBateau().get(i).getComposantBateau().size()==this.joueur1.getSesBateau().get(i).getTaille())
+			i++;
+			this.joueur1.getSesBateau().get(i).ajoutMorceau(x, y);
+		}
+		else {
+		while (this.joueur2.getSesBateau().get(i).getComposantBateau().size()==this.joueur2.getSesBateau().get(i).getTaille())
+			i++;
+			this.joueur2.getSesBateau().get(i).ajoutMorceau(x, y);
+		}
+	}		
 }

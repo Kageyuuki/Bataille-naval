@@ -40,10 +40,10 @@ public class Bateau {
 	}
 	
 	public void ajoutMorceau(int x ,int y) {
-		if(this.taille>this.composantBateau.size() && (composantBateau.size()==0 || (composantBateau.get(composantBateau.size()-1).getX()==x || composantBateau.get(composantBateau.size()-1).getY()==y)) && !(composantBateau.get(composantBateau.size()-1).getX()==x && composantBateau.get(composantBateau.size()-1).getY()==y))			
+		if(this.taille>this.composantBateau.size() && (composantBateau.size()==0))  		
 			this.composantBateau.add(new MorceauBateau(x, y));
-		else
-			System.out.println("erreur");// A revoir
+		if (composantBateau.size()>0)
+		if ( !(composantBateau.get(composantBateau.size()-1).getX()==x && composantBateau.get(composantBateau.size()-1).getY()==y)&& (composantBateau.get(composantBateau.size()-1)==x || composantBateau.get(composantBateau.size()-1)==y)	)
 	}
 	
 }
