@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.util.ArrayList;
 
@@ -411,7 +412,9 @@ public class GrilleBoutton extends JPanel {
 		this.j_10 = new CaseBoutton(10, 10);
 		this.listeBoutton.add(j_10);
 		
-		
+		for (int i =0; i<this.listeBoutton.size();i++) {
+			this.listeBoutton.get(i).getBoutton().setBackground(Color.WHITE);
+		}
 		//Declaration du layout
 		this.setLayout(new GridLayout(11,11));
 		

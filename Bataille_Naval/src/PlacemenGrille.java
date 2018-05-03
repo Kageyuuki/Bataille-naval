@@ -21,6 +21,7 @@ public class PlacemenGrille extends JPanel {
 		this.blanc1 = (new JLabel("                "));
 		this.blanc2 = (new JLabel("                "));
 		this.espace = (new JLabel("                "));
+		this.grille.setSize(200, 200);
 		this.add(grille, BorderLayout.CENTER);
 		this.add(blanc2, BorderLayout.EAST);
 		this.add(blanc1, BorderLayout.WEST);
